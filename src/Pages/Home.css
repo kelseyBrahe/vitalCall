@@ -1,0 +1,471 @@
+/* Desktop styling */
+
+.product-features {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
+  overflow-x: hidden;
+  padding-top: 2%;
+  height: auto;
+}
+
+.feature-1,
+.feature-2,
+.feature-3 {
+  flex: 0 0 23%;
+  align-items: stretch;
+  height: auto;
+  border-radius: 10px;
+  background-color: #d9ecf2;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2%;
+  padding-bottom: 2%;
+}
+
+.feature-img {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  height: 35vh;
+}
+
+.feature-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.feature-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: "Roboto", sans-serif;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.feature-text h3 {
+  font-weight: 500;
+  font-size: clamp(1rem, 1.3vw, 5em);
+  margin-top: 10%;
+  font-family: "Roboto", sans-serif;
+}
+
+.feature-text p {
+  font-weight: 300;
+  font-size: clamp(1rem, 1.2vw, 4.5em);
+  margin: 0.5rem 0 0 0;
+  line-height: 1.4;
+}
+
+#feature-img-2 {
+  object-position: 50% 45%;
+}
+
+#feature-img-3 {
+  object-position: 50% 40%;
+}
+
+.why-buy {
+  box-sizing: border-box;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 10em;
+}
+
+.why-jumbotron {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: stretch;
+  background-color: #f9dec9;
+  border-radius: 10px;
+}
+
+.why-img {
+  flex: 0 0 40%;
+  overflow: hidden;
+  position: relative;
+}
+
+.why-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 0px 0px 10px;
+  object-position: 30% 50%;
+}
+
+.why-text {
+  flex: 1 1 60%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 3%;
+  display: flex;
+  flex-direction: column;
+}
+
+.why-text h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: clamp(1rem, 1.4vw, 5em);
+}
+
+.why-text p {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1rem, 1.2vw, 4.5em);
+}
+
+.why-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.why-buttons .btn-trans-black {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  margin-top: 5%;
+  margin-right: 1em;
+  font-size: clamp(1rem, 1.3vw, 4.5em);
+  padding: 0.5em 1em;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.why-buttons .btn-trans-black:hover {
+  background-color: #093fb4;
+  border-color: #093fb4;
+  color: white;
+  transition: 0.5s ease;
+}
+
+.product-price {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  display: flex;
+  flex-direction: row;
+}
+
+.product-details {
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+  flex: 0 0 60%;
+  justify-content: center;
+  height: auto;
+  font-family: "Montserrat", sans-serif;
+  order: 1;
+}
+
+.inner-details {
+  box-sizing: border-box;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  padding-top: 0;
+  justify-content: flex-start;
+}
+
+.inner-details > h1 {
+  font-weight: 500;
+  margin-bottom: 1%;
+  font-size: clamp(1.1rem, 1.5vw, 5em);
+}
+
+.inner-details > h3 {
+  font-weight: 450;
+  margin-bottom: 3%;
+  font-size: clamp(1rem, 1.3vw, 4.6em);
+}
+
+.inner-details > p {
+  width: 100%;
+  font-size: clamp(1rem, 1.3vw, 4.5em);
+}
+
+.inner-details > p.soft-p {
+  font-size: clamp(1rem, 1.2vw, 3.5em);
+  color: gray;
+}
+
+.inner-details > .product-buttons {
+  text-decoration: none;
+  font-size: clamp(1rem, 1.3vw, 4.2em);
+  margin-top: 2em;
+  margin-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-buttons .btn-red {
+  background-color: #ed3500;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  padding: 0.8em 1.5em;
+  margin-bottom: 1em;
+  width: fit-content;
+}
+
+.product-buttons .btn-blue {
+  background-color: #093fb4;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 0.8em 1.5em;
+  width: fit-content;
+}
+
+.product-image {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex: 0 0 30%;
+  order: 2;
+}
+
+.product-image > img {
+  position: absolute;
+  max-height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.our-story {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: #d9ecf2;
+  margin-bottom: 10%;
+  margin-top: 5%;
+}
+
+.story-image {
+  display: flex;
+  flex: 0 0 35%;
+  position: relative;
+  overflow: hidden;
+}
+
+.story-image img {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0% 45%;
+}
+
+.story-details {
+  display: flex;
+  flex: 0 0 65%;
+  justify-content: center;
+}
+
+.inner-story {
+  display: flex;
+  justify-content: flex-start;
+  width: 60%;
+  flex-direction: column;
+  padding-top: 2%;
+}
+
+.inner-story > h1 {
+  font-size: clamp(1rem, 1.9vw, 6em);
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+
+.inner-story > p {
+  font-size: clamp(0.8em, 1.3vw, 4.5em);
+  font-family: "Montserrat", sans-serif;
+}
+
+.inner-story > .why-buttons {
+  padding-bottom: 5%;
+}
+
+/* Mobile styling */
+@media (max-width: 719px) {
+  .header {
+    height: 50vh;
+  }
+
+  .header-img {
+    object-position: 0% 100%;
+  }
+
+  .product-features {
+    box-sizing: border-box;
+    max-width: 100%;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+  }
+
+  .product-features > div {
+    width: 70%;
+  }
+
+  .why-buy {
+    padding: 1em 3em;
+  }
+
+  .why-jumbotron {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .why-img img {
+    position: relative;
+    display: block;
+    height: 30vh;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .why-text {
+    margin-bottom: 2%;
+  }
+
+  .why-buttons .btn-trans-black {
+    font-size: clamp(0.9rem, 1.4vw, 3em);
+  }
+
+  .product-price {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .product-details {
+    order: 2;
+  }
+
+  .product-image {
+    order: 1;
+    display: flex;
+    position: relative;
+    flex: 0 0 auto;
+    width: 80%;
+    height: 40vh;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 2em;
+  }
+
+  .product-image > img {
+    position: absolute;
+  }
+
+  .inner-details > p {
+    width: 65vw;
+  }
+
+  .inner-details > .product-buttons {
+    margin-top: 1em;
+  }
+
+  .our-story {
+    flex-direction: column;
+  }
+
+  .story-image {
+    display: flex;
+    position: relative;
+    flex: 0 0 auto;
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 2em;
+  }
+
+  .story-image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+
+  .inner-story > .why-buttons {
+    margin-bottom: 1em;
+  }
+
+  .inner-story > .why-buttons > a {
+    font-size: clamp(0.8em, 1.3vw, 4.5em);
+  }
+}
+
+/* Tablet styling */
+@media (min-width: 720px) and (max-width: 1024px) {
+  .header {
+    height: 50vh;
+    min-height: 420px;
+  }
+
+  .feature-1,
+  .feature-2,
+  .feature-3 {
+    flex: 0 0 30%;
+  }
+
+  .header-overlay h1 {
+    font-size: clamp(18px, 4vw, 36px);
+  }
+
+  .header-overlay h4 {
+    font-size: clamp(16px, 2.5vw, 24px);
+  }
+
+  .header-overlay .btn-transparent {
+    font-size: clamp(18px, 2.8vw, 24px);
+  }
+
+  .why-buy {
+    padding: 1em 6em;
+  }
+}
+
+/* Landscape tablets (wide, but short) and smaller laptops */
+@media (max-height: 768px) and (orientation: landscape) {
+  .header {
+    height: 90vh;
+  }
+
+  .header-overlay h1 {
+    font-size: clamp(20px, 3vw, 36px);
+  }
+
+  .header-overlay h4 {
+    font-size: clamp(16px, 2vw, 24px);
+  }
+
+  .header-overlay .btn-transparent {
+    font-size: clamp(16px, 2vw, 24px);
+  }
+}

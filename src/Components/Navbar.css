@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 1100;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  top: 0;
+  height: auto;
+  padding: 1em;
+}
+
+.navbar .logo {
+  height: clamp(30px, 4vw, 8em);
+  flex: 0 0 auto;
+  margin-top: 0.5em;
+  margin-bottom: 0.25em;
+}
+
+.nav-links {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.end-nav-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 0 0 auto;
+  gap: clamp(0.3rem, 2vw, 2em);
+}
+
+.navbar .link {
+  color: #093fb4;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: clamp(0.6rem, 1.3vw, 4em);
+  display: inline-block;
+  transition: transform 0.2s ease;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.navbar .link::after {
+  color: #093fb4;
+  text-decoration: none;
+}
+
+.navbar .link:hover {
+  transform: translateY(-2px);
+}
+
+.cart {
+  width: clamp(20px, 2.5vw, 1.4em);
+  height: auto;
+  max-height: 4em;
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.contact {
+  background-color: #093fb4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: clamp(0.6rem, 1.5vw, 3.5em);
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  white-space: nowrap;
+  margin-top: 0.5em;
+  margin-bottom: 0.25em;
+}
+
+.contact:hover {
+  background-color: #ed3500;
+  transition: 0.5s ease-in-out;
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 18px;
+  padding: 0;
+}
+
+.hamburger .bar {
+  height: 3px;
+  background-color: #093fb4;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+button.hamburger.hidden {
+  display: none;
+}
+
+.overlay-menu {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: white;
+  display: flex;
+  justify-content: flex-start;
+  z-index: 1000;
+}
+
+.menu-content {
+  background: white;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: relative;
+}
+
+.menu-content .link {
+  font-size: 1.2rem;
+  color: #093fb4;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #093fb4;
+}
+
+.navbar .active {
+  border-bottom: 2px solid #093fb4;
+  padding-bottom: 0.1%;
+}
+
+a.link.reading-font.active {
+  border-bottom: 2px solid #093fb4;
+  padding-bottom: 0.1%;
+}
+
+.nav-image > a.active {
+  text-decoration: none;
+  border-bottom: none;
+}
